@@ -32,7 +32,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private bool IsGrounded(){
-        return Physics2D.BoxCast(cl.bounds.center, cl.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
+    private bool IsGrounded()
+    {
+        float rayLength = 1.1f; // Adjust this value as needed
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayLength, groundLayer);
+
+        Debug.DrawRay(transform.position, Vector2.down * rayLength, Color.red);
+
+        return hit.collider != null;
     }
 }
