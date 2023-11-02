@@ -11,6 +11,7 @@ public class MovingPlatform : MonoBehaviour
 
     private Vector3 targetPosition;
     private bool playerOnPlatform = false;
+    private Transform playerTransform;
 
     void Start()
     {
@@ -34,6 +35,12 @@ public class MovingPlatform : MonoBehaviour
             // Swap the target position (A to B, or B to A)
             targetPosition = (targetPosition == pointA.position) ? pointB.position : pointA.position;
         }
+
+        if (playerOnPlatform && playerTransform != null)
+        {
+            // Update the player's position relative to the platform
+            playerTransform.position = new Vector3(playerTransform.position.x, transform.position.y + 1.0f, playerTransform.position.z);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -42,6 +49,10 @@ public class MovingPlatform : MonoBehaviour
         {
             // Player is on the platform, enable movement
             playerOnPlatform = true;
+            playerTransform = collision.transform;
+
+            // Make the player a child of the platform
+            playerTransform.SetParent(transform);
         }
     }
 
@@ -51,6 +62,9 @@ public class MovingPlatform : MonoBehaviour
         {
             // Player has left the platform, stop movement
             playerOnPlatform = false;
+
+            // Remove the player as a child of the platform
+            playerTransform.SetParent(null);
         }
     }
 }
