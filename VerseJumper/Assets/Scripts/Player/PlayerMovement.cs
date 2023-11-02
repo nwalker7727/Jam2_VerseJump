@@ -8,29 +8,31 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
     private bool isGrounded;
     private Rigidbody2D rb;
+    private BoxCollider2D cl;
 
-    public GameObject groundObject;
+    [SerializeField]
+    private LayerMask groundLayer; // Serialized field for ground layer
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        cl = GetComponent<BoxCollider2D>();
     }
 
     void Update()
     {
-        // Check if the player is grounded
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.1f, groundObject.layer);
-        
-        Debug.Log("Is Grounded: " + isGrounded);
-
         // Player movement
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
         // Jumping
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
+    }
+
+    private bool IsGrounded(){
+        return Physics2D.BoxCast(cl.bounds.center, cl.bounds.size, 0f, Vector2.down, 0.1f, groundLayer);
     }
 }
