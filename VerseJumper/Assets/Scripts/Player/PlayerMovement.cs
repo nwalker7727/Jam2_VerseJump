@@ -9,8 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private Rigidbody2D rb;
 
-    [SerializeField]
-    private LayerMask groundLayer;
+    public GameObject groundObject;
 
     void Start()
     {
@@ -20,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Check if the player is grounded
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.9f, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(transform.position, 0.1f, groundObject.layer);
+        
         Debug.Log("Is Grounded: " + isGrounded);
 
         // Player movement
