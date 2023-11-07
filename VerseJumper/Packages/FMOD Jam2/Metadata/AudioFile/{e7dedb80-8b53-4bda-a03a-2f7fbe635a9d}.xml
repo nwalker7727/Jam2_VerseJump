@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e7dedb80-8b53-4bda-a03a-2f7fbe635a9d}">
+		<property name="assetPath">
+			<value>forceField_000.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.95401360544217684</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ca45195-6a80-465d-8991-2d478c51d334}</destination>
+		</relationship>
+	</object>
+</objects>
