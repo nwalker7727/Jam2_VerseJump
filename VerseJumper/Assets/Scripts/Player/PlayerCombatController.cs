@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCombatController : MonoBehaviour
 {
-    public int meleeDamage = 10; // Damage for melee attacks.
+    public int meleeDamage = 1; // Damage for melee attacks.
     public int rangedDamage = 20; // Damage for ranged attacks.
     public float attackRate = 1.0f; // Time delay between attacks.
     public float meleeRange = 2.0f; // Define the melee attack range.
@@ -50,14 +50,19 @@ public class PlayerCombatController : MonoBehaviour
 
     void MeleeAttack()
     {
+        // Set the "Melee" trigger in the Animator to play the melee animation.
+        playerAnimator.SetTrigger("Melee");
         if (IsInMeleeRange())
         {
-            // Set the "Melee" parameter to true in the Animator.
-            playerAnimator.SetBool("Melee", true);
-
-            // Implement the logic for melee attack.
-            // Make sure the player is within melee range before attacking.
-            // Use a trigger collider and OnTriggerEnter2D to detect and damage nearby enemies.
+            Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, meleeRange);
+            foreach (Collider2D enemy in hitColliders)
+            {
+                EnemyScript enemyHealth = enemy.GetComponent<EnemyScript>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(meleeDamage);
+                }
+            }
 
             // Start the attack cooldown timer.
             StartCoroutine(MeleeCooldown());
@@ -71,9 +76,6 @@ public class PlayerCombatController : MonoBehaviour
 
         // Wait for the specified cooldown duration.
         yield return new WaitForSeconds(0.2f); // Adjust the cooldown duration as needed.
-
-        // Reset the "Melee" parameter to false in the Animator.
-        playerAnimator.SetBool("Melee", false);
 
         // Re-enable melee attacks after the cooldown.
         canMeleeAttack = true;

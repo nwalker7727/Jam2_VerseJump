@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 133354477}
   - component: {fileID: 133354476}
   - component: {fileID: 133354475}
+  - component: {fileID: 133354479}
   m_Layer: 0
   m_Name: Enemy Sprite
   m_TagString: Enemy
@@ -389,6 +390,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &133354479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133354473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd3588d585476040a26d5608c8d6678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
 --- !u!1 &185376954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3269,6 +3283,7 @@ GameObject:
   - component: {fileID: 1818039187}
   - component: {fileID: 1818039186}
   - component: {fileID: 1818039185}
+  - component: {fileID: 1818039189}
   m_Layer: 0
   m_Name: Enemy Sprite
   m_TagString: Enemy
@@ -3405,6 +3420,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1818039189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818039183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd3588d585476040a26d5608c8d6678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
 --- !u!1 &1824403403
 GameObject:
   m_ObjectHideFlags: 0
@@ -12193,6 +12221,7 @@ GameObject:
   - component: {fileID: 739515134367103228}
   - component: {fileID: 739515134367103219}
   - component: {fileID: 739515134367103231}
+  - component: {fileID: 739515134367103232}
   m_Layer: 0
   m_Name: Enemy Sprite
   m_TagString: Enemy
@@ -12329,6 +12358,19 @@ MonoBehaviour:
   pointA: {fileID: 739515134764138276}
   pointB: {fileID: 739515134827261469}
   moveSpeed: 3
+--- !u!114 &739515134367103232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739515134367103218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd3588d585476040a26d5608c8d6678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
 --- !u!1 &739515134764136667
 GameObject:
   m_ObjectHideFlags: 0

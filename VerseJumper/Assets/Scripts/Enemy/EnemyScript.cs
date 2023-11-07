@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour
 {
-    public int maxHealth = 3;
+    public int maxHealth = 1;
     private int currentHealth;
 
     void Start()
