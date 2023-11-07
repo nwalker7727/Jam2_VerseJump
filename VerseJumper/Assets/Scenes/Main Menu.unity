@@ -447,7 +447,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 327762470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6a882ddec25e745b6280a2f91033b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5491ead335b72444197cd527551ae39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 411666236}
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 327762470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002a44d88963d8b40b4e66481db3f7b5, type: 3}
+  m_Script: {fileID: 11500000, guid: a487490bfb7efb64fb13c84c720b073c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   musicVolumeSlider: {fileID: 0}
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 411666236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6a882ddec25e745b6280a2f91033b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5491ead335b72444197cd527551ae39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 411666236}

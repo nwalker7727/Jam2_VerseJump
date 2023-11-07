@@ -497,8 +497,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184682554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.774616, y: 7.983733, z: -0.64547753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -510,8 +510,7 @@ Transform:
   - {fileID: 81411704}
   - {fileID: 1143767063}
   - {fileID: 811597622}
-  - {fileID: 434612228}
-  m_Father: {fileID: 1214439310}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &184682556
@@ -726,7 +725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165cb742e31f8ea4ca74a6dc4f28474f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Level 1
 --- !u!212 &197480913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -991,12 +989,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434612225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.774616, y: -7.983733, z: 0.64547753}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 184682555}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454021741
 GameObject:
@@ -1315,8 +1313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5282b977936b4fb4785942ac0af93e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImage: {fileID: 1622121379}
-  fadeDuration: 1
 --- !u!1 &763335873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,39 +2220,6 @@ Transform:
   m_Father: {fileID: 184682555}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1214439309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1214439310}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1214439310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214439309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.774616, y: 7.983733, z: -0.64547753}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 184682555}
-  - {fileID: 1510622759}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214810183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,13 +2297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6511d9d6c14404b96f6fdb17677f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <menuMusic>k__BackingField:
-    Guid:
-      Data1: 1919689510
-      Data2: 1263612590
-      Data3: 1434715569
-      Data4: -981137519
-    Path: event:/Music/Mysterious_Traveler_Finished
 --- !u!1 &1420274925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,14 +2808,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510622758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.774616, y: 7.983733, z: -0.64547753}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 16899418}
   - {fileID: 1420274926}
-  m_Father: {fileID: 1214439310}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1510622760
