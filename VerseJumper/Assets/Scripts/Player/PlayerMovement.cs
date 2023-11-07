@@ -7,8 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     private bool isGrounded;
-    private Rigidbody2D rb;
-    private BoxCollider2D cl;
+    private Rigidbody rb;
+    private Collider col; // Use the base class for colliders
+    private bool is2D = false; // A flag to indicate 2D or 3D
+    private ForceMode jumpForceMode;
 
     [SerializeField]
     private LayerMask groundLayer; // Serialized field for ground layer
@@ -18,8 +20,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        cl = GetComponent<BoxCollider2D>();
+        // Detect whether the object uses 2D or 3D components
+        rb = GetComponent<Rigidbody>();
+        col = GetComponent<Collider>();
+        if (rb is Rigidbody2D)
+        {
+            is2D = true;
+            jumpForceMode = ForceMode.Impulse; // Use 2D force mode
+        }
+        else
+        {
+            jumpForceMode = ForceMode.Impulse; // Use 3D force mode
+        }
     }
 
     void Update()
@@ -43,14 +55,22 @@ public class PlayerMovement : MonoBehaviour
         bool isMoving = Mathf.Abs(moveInput) > 0;
         animator.SetBool("IsMoving", isMoving);
 
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        // Use different velocity assignments for 2D and 3D rigidbodies
+        if (is2D)
+        {
+            rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = new Vector3(moveInput * moveSpeed, rb.velocity.y, 0);
+        }
 
         // Jumping
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             // Set IsJumping to true
             animator.SetBool("IsJumping", true);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, jumpForceMode);
         }
 
         // Set animation based on jumping state
@@ -74,10 +94,16 @@ public class PlayerMovement : MonoBehaviour
     {
         float rayLength = 1.1f; // Adjust this value as needed
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayLength, groundLayer);
-
-        Debug.DrawRay(transform.position, Vector2.down * rayLength, Color.red);
-
-        return hit.collider != null;
+        if (is2D)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(col.bounds.center, Vector2.down, col.bounds.extents.y + 0.1f, groundLayer);
+            Debug.DrawRay(col.bounds.center, Vector2.down * (col.bounds.extents.y + 0.1f), Color.red);
+            return hit.collider != null;
+        }
+        else
+        {
+            RaycastHit hit;
+            return Physics.Raycast(col.bounds.center, Vector3.down, out hit, col.bounds.extents.y + 0.1f, groundLayer);
+        }
     }
 }
