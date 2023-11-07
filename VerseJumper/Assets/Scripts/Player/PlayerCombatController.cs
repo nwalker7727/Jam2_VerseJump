@@ -10,6 +10,7 @@ public class PlayerCombatController : MonoBehaviour
     public float meleeRange = 2.0f; // Define the melee attack range.
     private float nextAttackTime = 0f; // Time of the next allowed attack.
     private bool canMeleeAttack = true; // Control if the player can perform a melee attack.
+    private bool canRangedAttack = true; // Control if the player can perform a ranged attack.
 
     public Animator playerAnimator; // Reference to the Animator component.
 
@@ -27,7 +28,7 @@ public class PlayerCombatController : MonoBehaviour
             {
                 MeleeAttack();
             }
-            else if (Input.GetMouseButtonDown(1)) // Right-click (ranged attack).
+            else if (Input.GetMouseButtonDown(1) && canRangedAttack) // Right-click (ranged attack).
             {
                 RangedAttack();
             }
@@ -99,5 +100,11 @@ public class PlayerCombatController : MonoBehaviour
         
         // Update the next attack time based on the attack rate.
         nextAttackTime = Time.time + 1f / attackRate;
+    }
+
+    // Toggle for enabling/disabling ranged attacks.
+    public void ToggleRangedAttacks(bool isEnabled)
+    {
+        canRangedAttack = isEnabled;
     }
 }
