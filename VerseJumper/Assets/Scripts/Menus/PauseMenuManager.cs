@@ -7,7 +7,17 @@ public class PauseMenuManager : MonoBehaviour
 {
     public GameObject gamePlay;
     public GameObject pauseMenu;
+    public GameObject[] points ;
+    private SpriteRenderer render; 
+
     // Start is called before the first frame update
+    void Start(){
+        points = GameObject.FindGameObjectsWithTag("PatrolPoints");
+        foreach(GameObject point in points){
+           render = point.GetComponent<SpriteRenderer>();
+           render.enabled = false;
+        }
+    }
     void Update(){
         if(Input.GetKeyDown(KeyCode.Escape)){
             Debug.Log("Pause");
