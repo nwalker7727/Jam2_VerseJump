@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer; // Serialized field for ground layer
 
+    [SerializeField]
+    private Animator animator; // Serialized field for the Animator component
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,10 +28,36 @@ public class PlayerMovement : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
+        // Set animation based on movement
+        if (moveInput != 0)
+        {
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
+
         // Jumping
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        // Set animation based on jumping state
+        if (rb.velocity.y > 0)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else if (rb.velocity.y < 0)
+        {
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsFalling", false);
         }
     }
 
