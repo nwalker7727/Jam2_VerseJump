@@ -9,7 +9,7 @@ public class MainMenuController : MonoBehaviour
     public GameObject optionsMenu;
     // Start is called before the first frame update
     public void playGame(){
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level 1 JSTN 3");
     }
     public void options(){
         mainMenu.SetActive(false);
