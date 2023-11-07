@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; // Import the UnityEngine.UI namespace.
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,8 +10,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     private bool canTakeDamage = true;
     public float damageCooldown = 1.0f;
-
-    public Slider healthSlider; // Reference to the Slider UI element for health.
+    public Slider healthSlider;
 
     void Start()
     {
@@ -44,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
 
             canTakeDamage = false;
         }
-        UpdateHealthUI(); // Update the health bar when taking damage.
+        UpdateHealthUI();
     }
 
     void Die()
@@ -58,13 +57,30 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage();
         }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Spikes"))
+        {
+            Die();
+        }
+    }
+
+    // Handle trigger collisions with trigger colliders.
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (canTakeDamage && other.gameObject.CompareTag("Enemy"))
+        {
+            TakeDamage();
+        }
+        if (canTakeDamage && other.gameObject.CompareTag("Spike"))
+        {
+            Die();
+        }
     }
 
     void UpdateHealthUI()
     {
         if (healthSlider != null)
         {
-            healthSlider.value = currentHealth / (float)maxHealth; // Update the health bar's value based on the current health.
+            healthSlider.value = currentHealth / (float)maxHealth;
         }
     }
 }
