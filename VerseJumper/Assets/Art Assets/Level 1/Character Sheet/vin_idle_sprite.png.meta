@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f3caf8f58a14ad49a3d6aaf90a646ed
+guid: d4fc05a5106406b4ca8a05d29819af45
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,112 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: vin_run_sprite_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6a8ca0d8a809da46ac0c72530d230b1
-      internalID: 145789433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_1
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bea6d815d40f8c41a3b02c04533128a
-      internalID: 262347412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_2
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e67a85e185bce1c428ff30e5f59a5f39
-      internalID: 523253051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_3
-      rect:
-        serializedVersion: 2
-        x: 3000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dff32b239bf2ec449cd1492ad92e6a7
-      internalID: -1577388669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_4
-      rect:
-        serializedVersion: 2
-        x: 4000
-        y: 2000
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0baf0dabf5dfb94ab8db5ea39449de4
-      internalID: -1654402237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_5
+      name: vin_idle_sprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -236,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fef4c2db380c0a44ea6654a1a861a9ed
-      internalID: -1178312900
+      spriteID: 33328e05461db2e41b8324c31dee4daf
+      internalID: 2046999423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vin_run_sprite_6
+      name: vin_idle_sprite_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -257,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e7ef395da28d954babf86817ab61a20
-      internalID: -1170820099
+      spriteID: dd1325165dd8a6c49ae588f23d4ac341
+      internalID: -1431878270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vin_run_sprite_7
+      name: vin_idle_sprite_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -278,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637495940a367ad49951e9183f948273
-      internalID: -723729440
+      spriteID: 5ca1054e6cdc4314f86a2c1c2a0754c6
+      internalID: 709414694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vin_run_sprite_8
+      name: vin_idle_sprite_3
       rect:
         serializedVersion: 2
         x: 3000
@@ -299,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01f4cfc8c2f70dd4f83a5cf0e6cb6577
-      internalID: 54915209
+      spriteID: 1e9fb876fce548a40a09be1c57f90b91
+      internalID: 768724007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vin_run_sprite_9
+      name: vin_idle_sprite_4
       rect:
         serializedVersion: 2
         x: 4000
@@ -320,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54509947d41984543a748efc19d13b3e
-      internalID: 509437026
+      spriteID: 3a7c684760400b44d847d045df12b03a
+      internalID: -1446468035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: vin_run_sprite_10
+      name: vin_idle_sprite_5
       rect:
         serializedVersion: 2
         x: 0
@@ -341,50 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59c543334729f77419d562e5a3abcb37
-      internalID: -1125084086
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_11
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a783f490bd3b6714db4b86d621ba4973
-      internalID: 1042662874
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vin_run_sprite_12
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 0
-        width: 1000
-        height: 1000
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97a6cac73b6e5b848afd4183e25fa82a
-      internalID: -1863699184
+      spriteID: 85f63c8050dce384e9450f8b03a71ae9
+      internalID: 116135723
       vertices: []
       indices: 
       edges: []
@@ -400,19 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      vin_run_sprite_12: -1863699184
-      vin_run_sprite_1: 262347412
-      vin_run_sprite_11: 1042662874
-      vin_run_sprite_2: 523253051
-      vin_run_sprite_4: -1654402237
-      vin_run_sprite_9: 509437026
-      vin_run_sprite_8: 54915209
-      vin_run_sprite_7: -723729440
-      vin_run_sprite_3: -1577388669
-      vin_run_sprite_0: 145789433
-      vin_run_sprite_6: -1170820099
-      vin_run_sprite_10: -1125084086
-      vin_run_sprite_5: -1178312900
+      vin_idle_sprite_2: 709414694
+      vin_idle_sprite_4: -1446468035
+      vin_idle_sprite_0: 2046999423
+      vin_idle_sprite_3: 768724007
+      vin_idle_sprite_1: -1431878270
+      vin_idle_sprite_5: 116135723
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
