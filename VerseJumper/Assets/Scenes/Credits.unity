@@ -822,7 +822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1529023974}
-  - component: {fileID: 1529023975}
+  - component: {fileID: 1529023976}
   m_Layer: 0
   m_Name: CreditsMenu
   m_TagString: Untagged
@@ -848,7 +848,7 @@ Transform:
   m_Father: {fileID: 789521440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1529023975
+--- !u!114 &1529023976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -857,9 +857,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1529023973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172834f9023689843bc2d3b4d9d98e18, type: 3}
+  m_Script: {fileID: 11500000, guid: 99c71f1b5bf44f146b90e05c5133ec6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
 --- !u!1 &1981294974
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,9 +946,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1529023975}
-        m_TargetAssemblyTypeName: CreditsMenuManager, Assembly-CSharp
-        m_MethodName: back
+      - m_Target: {fileID: 1529023976}
+        m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
+        m_MethodName: levelBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
