@@ -26,21 +26,30 @@ public class PlayerMovement : MonoBehaviour
     {
         // Player movement
         float moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
-        // Set animation based on movement
-        if (moveInput != 0)
+        // Separate the sprite flipping logic
+        if (moveInput < 0)
         {
-            animator.SetBool("IsMoving", true);
+            // Flip the object horizontally when moving left
+            transform.localScale = new Vector3(-1, 1, 1);
         }
-        else
+        else if (moveInput > 0)
         {
-            animator.SetBool("IsMoving", false);
+            // Reset the scale when moving right
+            transform.localScale = new Vector3(1, 1, 1);
         }
+
+        // Set animation based on key input
+        bool isMoving = Mathf.Abs(moveInput) > 0;
+        animator.SetBool("IsMoving", isMoving);
+
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
         // Jumping
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+            // Set IsJumping to true
+            animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
