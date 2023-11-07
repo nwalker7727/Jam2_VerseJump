@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 165cb742e31f8ea4ca74a6dc4f28474f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Level 2
+  sceneName: Main Menu
 --- !u!58 &8294914513369918995
 CircleCollider2D:
   m_ObjectHideFlags: 0
