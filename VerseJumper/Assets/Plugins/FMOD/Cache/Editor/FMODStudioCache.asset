@@ -190,7 +190,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638349813079501921
+  lastModified: 638349818061621649
   FileSizes:
   - Name: Desktop
     Value: 1818
@@ -323,7 +323,7 @@ MonoBehaviour:
   - {fileID: -2084004791005284800}
   StringsBanks:
   - {fileID: -1488852698998951354}
-  cacheTime: 638349813079631572
+  cacheTime: 638349818061759386
   cacheVersion: 131608
 --- !u!114 &888322660531976922
 MonoBehaviour:
@@ -367,7 +367,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638349813079631572
+  lastModified: 638349818061759386
   FileSizes:
   - Name: Desktop
     Value: 4164032
