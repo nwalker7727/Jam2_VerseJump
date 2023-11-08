@@ -327,6 +327,8 @@ GameObject:
   - component: {fileID: 2074228142}
   - component: {fileID: 2074228141}
   - component: {fileID: 2074228140}
+  - component: {fileID: 2074228146}
+  - component: {fileID: 2074228145}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -377,6 +379,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 0}
 --- !u!50 &2074228142
 Rigidbody2D:
   serializedVersion: 4
@@ -466,6 +469,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074228145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074228139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f677a662f1e274488f32746ca4b9a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeDamage: 1
+  rangedDamage: 20
+  attackRate: 1
+  meleeRange: 2
+  playerAnimator: {fileID: 0}
+--- !u!114 &2074228146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074228139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf50469ca426da4f83e7d2f7b270d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  damageCooldown: 1
+  healthSlider: {fileID: 0}
 --- !u!1 &2104732687
 GameObject:
   m_ObjectHideFlags: 0
