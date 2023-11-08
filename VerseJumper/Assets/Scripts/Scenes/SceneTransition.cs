@@ -8,12 +8,15 @@ public class SceneTransition : MonoBehaviour
     public Image fadeImage;
     public float fadeDuration = 1.0f;
 
+    public AudioManager am;
+
     private bool isFading = false;
 
     private void Start()
     {
         // Ensure the fade image is visible and at full opacity
         fadeImage.color = Color.black;
+        am = FindObjectOfType<AudioManager>();
         StartCoroutine(FadeIn());
     }
 
@@ -55,7 +58,7 @@ public class SceneTransition : MonoBehaviour
         }
 
         fadeImage.color = Color.black;
-
+        am.thanos();
         SceneManager.LoadScene(sceneName);
     }
 }
