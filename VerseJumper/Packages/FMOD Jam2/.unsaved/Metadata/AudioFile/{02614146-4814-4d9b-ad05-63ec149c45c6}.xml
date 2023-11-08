@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{02614146-4814-4d9b-ad05-63ec149c45c6}">
+		<property name="assetPath">
+			<value>RoninNoSitar.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>96.148049886621308</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ca45195-6a80-465d-8991-2d478c51d334}</destination>
+		</relationship>
+	</object>
+</objects>
