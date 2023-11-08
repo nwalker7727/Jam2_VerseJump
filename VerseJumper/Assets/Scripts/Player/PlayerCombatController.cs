@@ -86,12 +86,16 @@ public class PlayerCombatController : MonoBehaviour
     {
         // Set the "Ranged" parameter to true in the Animator.
         playerAnimator.SetBool("Ranged", true);
-
+        StartCoroutine(RangedCoolDown());
         // Implement the logic for ranged attack.
         // You can use raycasting, instantiate projectiles, or other methods for ranged attacks.
         // Apply ranged damage to enemies if they are hit.
     }
 
+    IEnumerator RangedCoolDown(){
+        yield return new WaitForSeconds(2.0f);
+        playerAnimator.SetBool("Ranged", false);
+    }
     void DealDamage(int damageAmount)
     {
         // This method can be used to handle damage logic common to both melee and ranged attacks.

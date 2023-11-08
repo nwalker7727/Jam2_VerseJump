@@ -7,8 +7,8 @@ public class PlayerMovement3D : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     private bool isGrounded;
-    private Rigidbody rb;
-    private Collider col;
+    private Rigidbody2D rb;
+    private BoxCollider2D cl;
 
     [SerializeField]
     private LayerMask groundLayer; // Serialized field for ground layer
@@ -18,8 +18,9 @@ public class PlayerMovement3D : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        col = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody2D>();
+        cl = GetComponent<BoxCollider2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,17 +43,20 @@ public class PlayerMovement3D : MonoBehaviour
         // Set animation based on key input
         bool isMoving = Mathf.Abs(moveInput) > 0;
         animator.SetBool("IsMoving", isMoving);
-
-        rb.velocity = new Vector3(moveInput * moveSpeed, rb.velocity.y, 0);
+        if(isMoving){
+            Debug.Log("move");
+        }
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
         // Jumping
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
+        if (IsGrounded3() && Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("jump");
             // Set IsJumping to true
             animator.SetBool("IsJumping", true);
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-
+        
         // Set animation based on jumping state
         if (rb.velocity.y > 0)
         {
@@ -69,17 +73,14 @@ public class PlayerMovement3D : MonoBehaviour
             animator.SetBool("IsFalling", false);
         }
     }
-
-    private bool IsGrounded()
+    
+    private bool IsGrounded3()
     {
-        float rayLength = 1.1f; // Adjust this value as needed
-
-        RaycastHit hit;
-        if (Physics.Raycast(col.bounds.center, Vector3.down, out hit, col.bounds.extents.y + 0.1f, groundLayer))
-        {
-            Debug.DrawRay(col.bounds.center, Vector3.down * (col.bounds.extents.y + 0.1f), Color.red);
+        if(!animator.GetBool("IsJumping") && !animator.GetBool("IsFalling")){
             return true;
         }
-        return false;
+        else{
+            return false;
+        }
     }
 }

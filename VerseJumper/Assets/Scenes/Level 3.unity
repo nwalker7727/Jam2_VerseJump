@@ -5682,11 +5682,11 @@ GameObject:
   - component: {fileID: 1697903884}
   - component: {fileID: 1697903883}
   - component: {fileID: 1697903882}
-  - component: {fileID: 1697903881}
   - component: {fileID: 1697903880}
   - component: {fileID: 1697903887}
   - component: {fileID: 1697903886}
   - component: {fileID: 1697903885}
+  - component: {fileID: 1697903888}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5720,24 +5720,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
---- !u!114 &1697903881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697903879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a67f04271f573f41b9486553f7529e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 7
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  animator: {fileID: 1697903887}
 --- !u!50 &1697903882
 Rigidbody2D:
   serializedVersion: 4
@@ -5879,6 +5861,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1697903888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697903879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a67f04271f573f41b9486553f7529e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 7
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  animator: {fileID: 1697903887}
 --- !u!1 &1709728597
 GameObject:
   m_ObjectHideFlags: 0
@@ -6666,6 +6666,7 @@ GameObject:
   - component: {fileID: 1966472613}
   - component: {fileID: 1966472615}
   - component: {fileID: 1966472614}
+  - component: {fileID: 1966472616}
   m_Layer: 0
   m_Name: Spikes(ground)
   m_TagString: Untagged
@@ -8029,6 +8030,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!50 &1966472616
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966472612}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1969623353
 GameObject:
   m_ObjectHideFlags: 0
@@ -34849,7 +34871,7 @@ GameObject:
   - component: {fileID: 2119090538}
   m_Layer: 0
   m_Name: Main Tiles
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

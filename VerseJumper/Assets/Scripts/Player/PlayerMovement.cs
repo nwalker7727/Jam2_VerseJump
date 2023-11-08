@@ -42,17 +42,20 @@ public class PlayerMovement : MonoBehaviour
         // Set animation based on key input
         bool isMoving = Mathf.Abs(moveInput) > 0;
         animator.SetBool("IsMoving", isMoving);
-
+        if(isMoving){
+            Debug.Log("move");
+        }
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
         // Jumping
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("jump");
             // Set IsJumping to true
             animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-
+        
         // Set animation based on jumping state
         if (rb.velocity.y > 0)
         {
@@ -72,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        float rayLength = 1.1f; // Adjust this value as needed
+        float rayLength = 2.0f; // Adjust this value as needed
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayLength, groundLayer);
 
