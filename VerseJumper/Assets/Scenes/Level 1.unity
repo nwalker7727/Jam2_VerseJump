@@ -11623,6 +11623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeImage: {fileID: 199848269}
   fadeDuration: 1
+  am: {fileID: 0}
 --- !u!1 &1672118828
 GameObject:
   m_ObjectHideFlags: 0
@@ -13706,11 +13707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7764008501937125717, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1
+      value: -49.98
       objectReference: {fileID: 0}
     - target: {fileID: 7764008501937125717, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.22
+      value: -31.55
       objectReference: {fileID: 0}
     - target: {fileID: 7764008501937125717, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
       propertyPath: m_LocalPosition.z
