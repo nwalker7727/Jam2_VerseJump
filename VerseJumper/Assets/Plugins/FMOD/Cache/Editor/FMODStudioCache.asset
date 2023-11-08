@@ -190,10 +190,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638349753130724785
+  lastModified: 638349756456946788
   FileSizes:
   - Name: Desktop
-    Value: 1768
+    Value: 1818
   Exists: 1
 --- !u!114 &-1329593835767495083
 MonoBehaviour:
@@ -276,6 +276,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 953
+--- !u!114 &-47135773386194409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RoninNoSitar
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RoninNoSitar
+  Guid:
+    Data1: 2018507715
+    Data2: 1228982373
+    Data3: 496226986
+    Data4: -2118131452
+  Banks:
+  - {fileID: 1446731808067358318}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96148
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,12 +344,13 @@ MonoBehaviour:
   - {fileID: 1447960655222108487}
   - {fileID: -7063527221260585099}
   - {fileID: 1811903831761080085}
+  - {fileID: -47135773386194409}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2084004791005284800}
   StringsBanks:
   - {fileID: -1488852698998951354}
-  cacheTime: 638349753131018213
+  cacheTime: 638349756457216731
   cacheVersion: 131608
 --- !u!114 &1446731808067358318
 MonoBehaviour:
@@ -339,10 +367,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638349753131018213
+  lastModified: 638349756457216731
   FileSizes:
   - Name: Desktop
-    Value: 2964224
+    Value: 4164032
   Exists: 1
 --- !u!114 &1447960655222108487
 MonoBehaviour:
@@ -513,10 +541,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Ronin
   Guid:
-    Data1: 2036245534
-    Data2: 1287894199
-    Data3: 62092982
-    Data4: 1352658973
+    Data1: 1158941759
+    Data2: 1335510301
+    Data3: -820314691
+    Data4: 1674799474
   Banks:
   - {fileID: 1446731808067358318}
   IsStream: 1
