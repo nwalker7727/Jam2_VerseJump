@@ -10,6 +10,7 @@ public class Portal : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Collide");
             SceneTransition sceneTransition = FindObjectOfType<SceneTransition>();
             if (sceneTransition != null)
             {
