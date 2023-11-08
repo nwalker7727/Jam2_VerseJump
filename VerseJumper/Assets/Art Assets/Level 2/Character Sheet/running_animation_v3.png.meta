@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: running_animation_v3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2910
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9965022592e8134095896bb48c19e92
+      internalID: 1967926210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_1
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 2910
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d4df83486f75f47b44cad5f07a18db
+      internalID: -1383433393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_2
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 2910
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c42518a3aefeb45a777025e5bce977
+      internalID: -2087875701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_3
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 2910
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac3c953e019dd14c91413481cb59155
+      internalID: 1490330603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_4
+      rect:
+        serializedVersion: 2
+        x: 3572
+        y: 2910
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99ffaa7ded64e14e96e53801fe62be3
+      internalID: -1473754763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1940
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043fd2b464b96834b9108345afdcf10f
+      internalID: 1819400363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_6
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1940
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ada7e21ba0cc1c48b9a65b1609331a2
+      internalID: 1648150136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_7
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 1940
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b3bb1598d56b544b2ef9b6809990c6
+      internalID: 533398411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_8
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1940
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d15e342b0efc741865f35902682d3a
+      internalID: -214517443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_9
+      rect:
+        serializedVersion: 2
+        x: 3572
+        y: 1940
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e712c20295a7edc46a3c39f3ccb7e511
+      internalID: 1877359453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a279642576c4134ca28ad68d6dfbd50
+      internalID: 153139356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_11
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 970
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b8c5ca183a9e74ba76d832458710e1
+      internalID: -637985838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_12
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 970
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de036efde9e22c34bbd67dc4173e2bc4
+      internalID: -1617747295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_13
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 970
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55cc978164df848a91f6a8a6e40f91
+      internalID: 1955892097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_14
+      rect:
+        serializedVersion: 2
+        x: 3572
+        y: 970
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fbbfd5d03d23f41b9da0b9fb3b2250
+      internalID: -237956669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: running_animation_v3_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 893
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48f35bbdfcfd5c41ac9ece9ee15467d
+      internalID: -1037283135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +462,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      running_animation_v3_9: 1877359453
+      running_animation_v3_12: -1617747295
+      running_animation_v3_2: -2087875701
+      running_animation_v3_13: 1955892097
+      running_animation_v3_3: 1490330603
+      running_animation_v3_4: -1473754763
+      running_animation_v3_6: 1648150136
+      running_animation_v3_14: -237956669
+      running_animation_v3_10: 153139356
+      running_animation_v3_8: -214517443
+      running_animation_v3_5: 1819400363
+      running_animation_v3_7: 533398411
+      running_animation_v3_1: -1383433393
+      running_animation_v3_11: -637985838
+      running_animation_v3_15: -1037283135
+      running_animation_v3_0: 1967926210
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
