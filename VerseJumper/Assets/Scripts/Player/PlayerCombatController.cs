@@ -11,12 +11,16 @@ public class PlayerCombatController : MonoBehaviour
     private float nextAttackTime = 0f; // Time of the next allowed attack.
     private bool canMeleeAttack = true; // Control if the player can perform a melee attack.
     private bool canRangedAttack = true; // Control if the player can perform a ranged attack.
-
     public Animator playerAnimator; // Reference to the Animator component.
+    public GameObject ball;
+    public float speed = 50;
+    RaycastHit hit;
+
 
     void Start()
     {
         // Make sure to assign the player's Animator component in the Inspector.
+        hit = new RaycastHit();
         playerAnimator = GetComponent<Animator>();
     }
 
@@ -87,6 +91,12 @@ public class PlayerCombatController : MonoBehaviour
         // Set the "Ranged" parameter to true in the Animator.
         playerAnimator.SetBool("Ranged", true);
         StartCoroutine(RangedCoolDown());
+        Ray ray = this.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+		if(Physics.Raycast(ray, out hit, 400.0f))
+		{
+			GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
+			newBall.GetComponent<Rigidbody>().velocity = (hit.point - transform.position).normalized * speed;
+		}
         // Implement the logic for ranged attack.
         // You can use raycasting, instantiate projectiles, or other methods for ranged attacks.
         // Apply ranged damage to enemies if they are hit.
