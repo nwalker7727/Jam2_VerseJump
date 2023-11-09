@@ -8,9 +8,11 @@ public class EnemyShoot : MonoBehaviour
     public float shootInterval = 1.0f; // Time interval between shots.
     public float shootSpeed = 5.0f; // Speed of the projectile.
     public Vector2 shootDirection = Vector2.right; // Shooting direction.
+    public GameObject projectile;
 
     private void Start()
     {
+        
         // Start shooting projectiles when the enemy is created.
         StartCoroutine(ShootProjectiles());
     }
@@ -20,8 +22,15 @@ public class EnemyShoot : MonoBehaviour
         while (true)
         {
             // Create a new projectile instance.
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-
+            if(shootDirection.x == -1){
+                projectile = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0f, 0f, 90f));
+            }
+            else if(shootDirection.y == 1){
+                projectile = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0f,0f,0f));
+            }
+            else{
+                projectile = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(0f, 0f, -90f));
+            }
             // Set the projectile's initial velocity based on the shootDirection.
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             rb.velocity = shootDirection.normalized * shootSpeed;
