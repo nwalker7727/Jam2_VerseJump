@@ -13,7 +13,7 @@ public class PlayerCombatController : MonoBehaviour
     private bool canRangedAttack = true; // Control if the player can perform a ranged attack.
     public Animator playerAnimator; // Reference to the Animator component.
     public GameObject ball;
-    public GameObject Camera;
+    public Camera camera;
     public float speed = 50;
     RaycastHit hit;
 
@@ -92,7 +92,7 @@ public class PlayerCombatController : MonoBehaviour
         // Set the "Ranged" parameter to true in the Animator.
         playerAnimator.SetBool("Ranged", true);
         StartCoroutine(RangedCoolDown());
-        Ray ray = this.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+        Ray ray = camera.GetComponent<Camera>().GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 		if(Physics.Raycast(ray, out hit, 400.0f))
 		{
 			GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
