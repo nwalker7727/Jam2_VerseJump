@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 256
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1011,13 +1011,13 @@ TextureImporter:
     nameFileIdTable:
       lvl3 idle_25: -1097419483
       lvl3 idle_23: -1742923875
-      lvl3 idle_14: -1966393475
-      lvl3 idle_30: -2115913637
-      lvl3 idle_29: -2130674693
+      lvl3 idle_0: -1003838326
       lvl3 idle_28: -1306710422
+      lvl3 idle_7: -1791546451
       lvl3 idle_18: 376258947
       lvl3 idle_4: 1781057101
       lvl3 idle_21: 26289270
+      lvl3 idle_33: -1810467774
       lvl3 idle_13: 707936849
       lvl3 idle_26: -1273652039
       lvl3 idle_24: 2039814138
@@ -1045,11 +1045,11 @@ TextureImporter:
       lvl3 idle_40: 144998641
       lvl3 idle_5: 1072656359
       lvl3 idle_6: -1605519162
-      lvl3 idle_37: -287698033
       lvl3 idle_36: 551260442
-      lvl3 idle_33: -1810467774
-      lvl3 idle_0: -1003838326
-      lvl3 idle_7: -1791546451
+      lvl3 idle_37: -287698033
+      lvl3 idle_14: -1966393475
+      lvl3 idle_30: -2115913637
+      lvl3 idle_29: -2130674693
       lvl3 idle_34: -1718780201
   spritePackingTag: 
   pSDRemoveMatte: 0
