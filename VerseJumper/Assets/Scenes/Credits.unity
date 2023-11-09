@@ -431,7 +431,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -706,37 +706,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Art:
-
-    Nikita Kamat
-
-    Emma Radichkova
-
-    Madelyn Sutherland
-
-    Issy
-    Wong
-
-    Talia Yaser
-
-
-    Sound:
-
-    Brendan Kitchen
-
-    Justin Vicente
-
-
-    Programming:
-
-    Noah
-    Walker
-
-    Brendan Kitchen
-
-    Justin Vicente
-
-'
+  m_text: "Music: Brendan Kitchen\n\nAsset Designer, Enemy Animation: Emma Radichkova\n\nBackground,
+    Level Design: Madelyn Sutherland \r\n\nConcept art, Level 1 Character Animations,
+    Main Menu Art: Issy Wong\n\nLvl 3 Character 3D modeling and animations: Nikita
+    Kamat\n\nLevel 2 background and character animations: Talia Yaser\n\nProgramming,
+    Sound, Level Design: Justin Vincente\n\nProgramming, Animation, UI Elements:
+    Noah Walker \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -838,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529023973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 78.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -899,7 +874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -214}
+  m_AnchoredPosition: {x: 8, y: -315}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981294976
