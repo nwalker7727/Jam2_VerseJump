@@ -306,10 +306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <menuMusic>k__BackingField:
     Guid:
-      Data1: 2018507715
-      Data2: 1228982373
-      Data3: 496226986
-      Data4: -2118131452
+      Data1: 361494728
+      Data2: 1300671940
+      Data3: -436952140
+      Data4: -884221808
     Path: event:/Music/RoninNoSitar
 --- !u!1 &168115140
 GameObject:

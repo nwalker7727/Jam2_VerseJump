@@ -150,7 +150,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638348896548008759
+  lastModified: 638350700014285714
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638348896548008759
+  lastModified: 638350700014335585
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -190,10 +190,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638350696901041105
+  lastModified: 638350700014375477
   FileSizes:
   - Name: Desktop
-    Value: 1768
+    Value: 1818
   Exists: 1
 --- !u!114 &-1329593835767495083
 MonoBehaviour:
@@ -317,12 +317,13 @@ MonoBehaviour:
   - {fileID: 1447960655222108487}
   - {fileID: -7063527221260585099}
   - {fileID: 1811903831761080085}
+  - {fileID: 8678126060643069553}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2084004791005284800}
   StringsBanks:
   - {fileID: -1488852698998951354}
-  cacheTime: 638350696901343977
+  cacheTime: 638350700037308546
   cacheVersion: 131608
 --- !u!114 &1446731808067358318
 MonoBehaviour:
@@ -339,10 +340,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638350696901268842
+  lastModified: 638350700036799895
   FileSizes:
   - Name: Desktop
-    Value: 2964736
+    Value: 4164544
   Exists: 1
 --- !u!114 &1447960655222108487
 MonoBehaviour:
@@ -494,7 +495,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638350696901343977
+  lastModified: 638350700037308546
   FileSizes:
   - Name: Desktop
     Value: 115904
@@ -742,3 +743,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1708
+--- !u!114 &8678126060643069553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/RoninNoSitar
+  m_EditorClassIdentifier: 
+  Path: event:/Music/RoninNoSitar
+  Guid:
+    Data1: 361494728
+    Data2: 1300671940
+    Data3: -436952140
+    Data4: -884221808
+  Banks:
+  - {fileID: 1446731808067358318}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96148
