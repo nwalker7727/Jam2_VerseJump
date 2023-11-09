@@ -12,9 +12,16 @@ public class PlayerHealth : MonoBehaviour
     public float damageCooldown = 1.0f;
     public Slider healthSlider;
 
+    [SerializeField]
+    private LayerMask spike; // LayerMask variable
+
+    [SerializeField]
+    private Transform spawnPoint; // You can add a public Transform variable for specifying a spawn point in the Inspector.
+
+    private AudioManager am;
     void Start()
     {
-        currentHealth = maxHealth;
+        am = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -46,9 +53,18 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthUI();
     }
 
-    void Die()
+    public void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        am.thanos();
+        // You can specify a spawn point for respawning
+        if (spawnPoint != null)
+        {
+            transform.position = spawnPoint.position;
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -57,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage();
         }
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Spikes"))
+        if (collision.gameObject.layer == spike)
         {
             Die();
         }
