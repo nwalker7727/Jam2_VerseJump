@@ -13,6 +13,7 @@ public class PlayerCombatController : MonoBehaviour
     private bool canRangedAttack = true; // Control if the player can perform a ranged attack.
     public Animator playerAnimator; // Reference to the Animator component.
     public GameObject ball;
+    public GameObject Camera;
     public float speed = 50;
     RaycastHit hit;
 
