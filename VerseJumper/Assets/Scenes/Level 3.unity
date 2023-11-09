@@ -34760,11 +34760,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <menuMusic>k__BackingField:
     Guid:
-      Data1: 1158941759
-      Data2: 1335510301
-      Data3: -820314691
-      Data4: 1674799474
-    Path: event:/Music/Ronin
+      Data1: 1326037734
+      Data2: 1177857341
+      Data3: 1228083348
+      Data4: 2138509375
+    Path: event:/Music/CyberBass
 --- !u!1 &2101197969
 GameObject:
   m_ObjectHideFlags: 0

@@ -363,11 +363,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <menuMusic>k__BackingField:
     Guid:
-      Data1: 1158941759
-      Data2: 1335510301
-      Data3: -820314691
-      Data4: 1674799474
-    Path: event:/Music/Ronin
+      Data1: 1722957274
+      Data2: 1268091245
+      Data3: -845773918
+      Data4: 2030867567
+    Path: event:/Music/MysteriousTraveler
 --- !u!1 &156467294
 GameObject:
   m_ObjectHideFlags: 0
