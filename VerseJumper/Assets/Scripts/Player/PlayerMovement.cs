@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        float rayLength = 2.0f; // Adjust this value as needed
+        float rayLength = 2.5f; // Adjust this value as needed
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayLength, groundLayer);
 
