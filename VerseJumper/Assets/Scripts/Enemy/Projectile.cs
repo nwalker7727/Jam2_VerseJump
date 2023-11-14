@@ -1,32 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public int damage = 10; // Damage inflicted by the projectile.
+    public int damage = 1;  // Amount of damage the projectile inflicts
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the trigger collision is with the player.
+        // Check if the trigger collider belongs to the player
         if (other.CompareTag("Player"))
         {
-            // Get the PlayerHealth script from the player GameObject (assuming you have a script for player health).
+            // Get the PlayerHealth component from the player GameObject
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
 
-            // Check if the playerHealth script is found.
+            // If the player has a PlayerHealth component, apply damage
             if (playerHealth != null)
             {
-                // Deduct the player's health based on the projectile's damage.
+                // Decrease player's health
                 playerHealth.TakeDamage();
-            }
 
-            // Destroy the projectile upon trigger collision.
-            Destroy(gameObject);
+                // Destroy the projectile
+                Destroy(gameObject);
+            }
         }
         else
         {
-            // If the trigger collision is with anything other than the player, destroy the projectile.
+            // If the trigger collider belongs to something other than the player, just destroy the projectile
             Destroy(gameObject);
         }
     }

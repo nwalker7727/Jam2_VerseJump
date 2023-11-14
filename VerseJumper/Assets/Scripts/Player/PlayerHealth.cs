@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -18,21 +20,27 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     private Transform spawnPoint; // You can add a public Transform variable for specifying a spawn point in the Inspector.
 
+    [field: SerializeField] 
+    public EventReference hitSoundEvent { get; private set; }
+
     private AudioManager am;
+
     void Start()
     {
         am = FindObjectOfType<AudioManager>();
+        currentHealth = maxHealth; // Set initial health to maxHealth
     }
 
     void Update()
     {
+        // Update the cooldown timer if the player cannot take damage
         if (!canTakeDamage)
         {
             damageCooldown -= Time.deltaTime;
             if (damageCooldown <= 0.0f)
             {
                 canTakeDamage = true;
-                damageCooldown = 1.0f;
+                damageCooldown = 1.0f; // Reset the cooldown for the next time the player can take damage
             }
         }
     }
@@ -41,6 +49,16 @@ public class PlayerHealth : MonoBehaviour
     {
         if (canTakeDamage)
         {
+            if (!hitSoundEvent.IsNull)
+            {
+                EventInstance eventInstance = RuntimeManager.CreateInstance(hitSoundEvent);
+                eventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform)); // Set 3D position.
+                eventInstance.start();
+
+                // Release the FMOD event instance when it's no longer needed.
+                eventInstance.release();
+            }
+
             currentHealth--;
 
             if (currentHealth <= 0)
@@ -49,7 +67,9 @@ public class PlayerHealth : MonoBehaviour
             }
 
             canTakeDamage = false;
+            damageCooldown = 1.0f; // Reset the cooldown for the next time the player can take damage
         }
+
         UpdateHealthUI();
     }
 

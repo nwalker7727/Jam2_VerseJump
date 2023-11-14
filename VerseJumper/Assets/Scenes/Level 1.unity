@@ -307,6 +307,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!1 &25630933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1625,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!1 &472932527
 GameObject:
   m_ObjectHideFlags: 0
@@ -13088,6 +13102,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!1 &1981839308
 GameObject:
   m_ObjectHideFlags: 0
@@ -13701,6 +13722,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125716, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Path
+      value: event:/SFX/SwordSlice
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125716, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data1
+      value: 476679484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125716, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data2
+      value: 1235362117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125716, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data3
+      value: 391601082
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125716, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data4
+      value: -1936703223
+      objectReference: {fileID: 0}
     - target: {fileID: 7764008501937125717, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13744,6 +13785,26 @@ PrefabInstance:
     - target: {fileID: 7764008501937125717, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125718, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Path
+      value: event:/SFX/PlayerDamaged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125718, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data1
+      value: 8267031
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125718, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data2
+      value: 1219001732
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125718, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data3
+      value: 657401502
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764008501937125718, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}
+      propertyPath: <hitSoundEvent>k__BackingField.Guid.Data4
+      value: -2126463847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cea6631bcfdbfb42815e39eb224ed05, type: 3}

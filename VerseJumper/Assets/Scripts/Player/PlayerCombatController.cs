@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class PlayerCombatController : MonoBehaviour
 {
@@ -16,6 +18,9 @@ public class PlayerCombatController : MonoBehaviour
     public Camera camera;
     public float speed = 50;
     RaycastHit hit;
+    
+    [field: SerializeField] 
+    public EventReference hitSoundEvent { get; private set; }
 
 
     void Start()
@@ -58,6 +63,15 @@ public class PlayerCombatController : MonoBehaviour
     {
         // Set the "Melee" trigger in the Animator to play the melee animation.
         playerAnimator.SetTrigger("Melee");
+        if (!hitSoundEvent.IsNull)
+            {
+                EventInstance eventInstance = RuntimeManager.CreateInstance(hitSoundEvent);
+                eventInstance.set3DAttributes(RuntimeUtils.To3DAttributes(transform)); // Set 3D position.
+                eventInstance.start();
+
+                // Release the FMOD event instance when it's no longer needed.
+                eventInstance.release();
+            }
         if (IsInMeleeRange())
         {
             Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, meleeRange);

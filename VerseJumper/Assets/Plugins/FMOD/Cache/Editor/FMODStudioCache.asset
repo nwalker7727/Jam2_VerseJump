@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8381989118072920088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MysteriousTraveler/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3519156017
+    data2: 2578946684
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-8059047802010629693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23,10 +47,35 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 6821862941149249537}
   MinDistance: 1
   MaxDistance: 20
   Length: 48141
+--- !u!114 &-7839993248234967381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ronin/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3519156017
+    data2: 2578946684
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-7063527221260585099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +103,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 114
+--- !u!114 &-6500478192364774980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RoninNoSitar/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3519156017
+    data2: 2578946684
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-5311190556777215891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,14 +141,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Fireball
   Guid:
-    Data1: 1586684813
-    Data2: 1335376935
-    Data3: -474202492
-    Data4: -252696123
+    Data1: 1342428118
+    Data2: 1275191862
+    Data3: -1413312111
+    Data4: -1456113908
   Banks:
   - {fileID: 5006510432669446986}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -135,6 +208,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 954
+--- !u!114 &-3114199739729635375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Footstep
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Footstep
+  Guid:
+    Data1: 1215589960
+    Data2: 1246027425
+    Data3: -2117089865
+    Data4: 128216632
+  Banks:
+  - {fileID: 5006510432669446986}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 940
 --- !u!114 &-2768163627659730236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +250,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638348896548008759
+  lastModified: 638355618342072335
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -170,7 +270,7 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638348896548008759
+  lastModified: 638355618342121881
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -190,10 +290,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638350701241998018
+  lastModified: 638355618342151794
   FileSizes:
   - Name: Desktop
-    Value: 1818
+    Value: 1896
   Exists: 1
 --- !u!114 &-1329593835767495083
 MonoBehaviour:
@@ -318,12 +418,13 @@ MonoBehaviour:
   - {fileID: -7063527221260585099}
   - {fileID: 1811903831761080085}
   - {fileID: 8678126060643069553}
+  - {fileID: -3114199739729635375}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2084004791005284800}
   StringsBanks:
   - {fileID: -1488852698998951354}
-  cacheTime: 638350701242274933
+  cacheTime: 638355618343548062
   cacheVersion: 131608
 --- !u!114 &1446731808067358318
 MonoBehaviour:
@@ -340,10 +441,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638350701242274933
+  lastModified: 638355618342929713
   FileSizes:
   - Name: Desktop
-    Value: 4164544
+    Value: 4166048
   Exists: 1
 --- !u!114 &1447960655222108487
 MonoBehaviour:
@@ -422,7 +523,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -8381989118072920088}
   MinDistance: 1
   MaxDistance: 20
   Length: 96148
@@ -495,10 +597,10 @@ MonoBehaviour:
   Path: Packages/FMOD Jam2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638350696901343977
+  lastModified: 638355618343548062
   FileSizes:
   - Name: Desktop
-    Value: 115904
+    Value: 117632
   Exists: 1
 --- !u!114 &5330723446412138319
 MonoBehaviour:
@@ -523,7 +625,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -7839993248234967381}
   MinDistance: 1
   MaxDistance: 20
   Length: 96148
@@ -635,6 +738,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 599
+--- !u!114 &6821862941149249537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CyberBass/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3519156017
+    data2: 2578946684
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7004778028586882308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,7 +893,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -6500478192364774980}
   MinDistance: 1
   MaxDistance: 20
   Length: 96148

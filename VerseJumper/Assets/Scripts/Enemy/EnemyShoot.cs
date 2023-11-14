@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
+using FMODUnity;
 
 public class EnemyShoot : MonoBehaviour
 {
@@ -9,10 +11,11 @@ public class EnemyShoot : MonoBehaviour
     public float shootSpeed = 5.0f; // Speed of the projectile.
     public Vector2 shootDirection = Vector2.right; // Shooting direction.
     public GameObject projectile;
+    [field: SerializeField] 
+    public EventReference shootSoundEvent { get; private set; }
 
     private void Start()
     {
-        
         // Start shooting projectiles when the enemy is created.
         StartCoroutine(ShootProjectiles());
     }

@@ -45,7 +45,7 @@ public class MenuAudioManager : MonoBehaviour
 
     public void SetMusic(float paramNum)
     {
-        musicEventInstances.setParameterByName("Menu", paramNum);
+        musicEventInstances.setParameterByName("Volume", paramNum);
     }
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)

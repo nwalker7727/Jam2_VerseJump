@@ -1261,6 +1261,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 0, y: 1}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &318883113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1274,6 +1281,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &318883114
 Animator:
   serializedVersion: 5
@@ -1441,6 +1455,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!50 &344186820
 Rigidbody2D:
   serializedVersion: 4
@@ -1789,6 +1810,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &366450677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1802,6 +1830,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &366450678
 Animator:
   serializedVersion: 5
@@ -2772,6 +2807,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: -1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &674712686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2785,6 +2827,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!95 &674712687
 Animator:
   serializedVersion: 5
@@ -3942,6 +3991,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1022844239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,6 +4011,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &1022844240
 Animator:
   serializedVersion: 5
@@ -4144,6 +4207,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: -1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1023307704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4157,6 +4227,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &1023307705
 Animator:
   serializedVersion: 5
@@ -6310,6 +6387,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 0, y: -1}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1683281680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6323,6 +6407,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &1683281681
 Animator:
   serializedVersion: 5
@@ -6614,6 +6705,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   spawnPoint: {fileID: 0}
+  <hitSoundEvent>k__BackingField:
+    Guid:
+      Data1: 8267031
+      Data2: 1219001732
+      Data3: 657401502
+      Data4: -2126463847
+    Path: event:/SFX/PlayerDamaged
 --- !u!114 &1697903886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6634,6 +6732,13 @@ MonoBehaviour:
   ball: {fileID: 5630385837445640466, guid: 7ce4980b3af81814ba060a69afd0fee9, type: 3}
   camera: {fileID: 0}
   speed: 50
+  <hitSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1455858720
+      Data2: 1100375934
+      Data3: 873241492
+      Data4: -1161527312
+    Path: event:/SFX/LaserBeam
 --- !u!95 &1697903887
 Animator:
   serializedVersion: 5
@@ -7929,6 +8034,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2045638287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7942,6 +8054,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &2045638288
 Animator:
   serializedVersion: 5
@@ -26417,6 +26536,13 @@ MonoBehaviour:
   shootSpeed: 5
   shootDirection: {x: 1, y: 0}
   projectile: {fileID: 0}
+  <shootSoundEvent>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &2101197972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26430,6 +26556,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  <thanosSoundEvent>k__BackingField:
+    Guid:
+      Data1: -1822116851
+      Data2: 1331925305
+      Data3: -2023542136
+      Data4: -249092387
+    Path: event:/SFX/Crumple
 --- !u!95 &2101197973
 Animator:
   serializedVersion: 5
@@ -29177,6 +29310,26 @@ PrefabInstance:
     - target: {fileID: 4356720011134145324, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928549371676410407, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
+      propertyPath: <thanosSoundEvent>k__BackingField.Path
+      value: event:/SFX/Crumple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928549371676410407, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
+      propertyPath: <thanosSoundEvent>k__BackingField.Guid.Data1
+      value: -1822116851
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928549371676410407, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
+      propertyPath: <thanosSoundEvent>k__BackingField.Guid.Data2
+      value: 1331925305
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928549371676410407, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
+      propertyPath: <thanosSoundEvent>k__BackingField.Guid.Data3
+      value: -2023542136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6928549371676410407, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
+      propertyPath: <thanosSoundEvent>k__BackingField.Guid.Data4
+      value: -249092387
       objectReference: {fileID: 0}
     - target: {fileID: 8438060844036695356, guid: 23b35925dcdcc1644b5534af796617d8, type: 3}
       propertyPath: m_RootOrder
